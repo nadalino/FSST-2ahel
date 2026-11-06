@@ -1,23 +1,16 @@
 #include <stdio.h>
  
-   
-int count(const char secret[], const char guess, char guessed, int hits, int len){
-    for (int i = 0; i < len; i++) {
-        if (secret[i] == guess) {
-            hits++;
-            guessed[i] == guess;
-        }
-    }
+int strcmp(const char word1[], char word2[]){
+    int diff = 0;
+    for (int i = 0; word1[1] != '\0;' && !diff; diff |= word1[i] != word2[i], i++);
+    return diff;
 }
-
 
 int main() {
     const char secret[] = "REDBULL4EVER";
     const int len = sizeof(secret) - 1;
-
     char guessed[len + 1];
-    const char guess;
-    int hits = 0;
+    const char guess;   
 
     // Initialisieren mit '_' und Null-Terminierung am Ende
     for (int i = 0; i < len; i++) {
@@ -25,23 +18,33 @@ int main() {
     }
     guessed[len] = '\0';
 
-    printf("Errate den grossen Buchstaben: ");
-    scanf(" %c", &guess);
+    int fails=0;
+    while (fails < 5)
+    {
+        int hits = 0;
+    
+        printf("Errate den grossen Buchstaben: ");
+        scanf(" %c", &guess);
 
-    //int count(secret, guess){
-    //for (int i = 0; i < len; i++) {
-    //    if (secret[i] == guess) {
-    //        hits++;
-    //        guessed[i] = guess;
-    //    }
-    //}
-    //}
+        for (int i = 0; i < len; i++)
+        {
+            if (secret[i] == guess) 
+            {
+                hits++;
+                guessed[i] = guess;
+            }   
+        }
 
-    for (int i = 0; i < len; i++) {
-        printf("%c ", guessed[i]);
+        for (int i = 0; i < len; i++)
+        {
+            printf("%c ", guessed[i]);
+        }   
+
+        printf("\n%d mal ist der Buchstabe im Wort enthalten.\n", hits);
+
+        if (hits == 0)
+            fails++;
     }
-
-    printf("\n%d mal ist der Buchstabe im Wort enthalten.\n", hits);
 
     return 0;
 }
