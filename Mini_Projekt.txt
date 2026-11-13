@@ -1,0 +1,72 @@
+Kundenauftrag: Berechnung der Sporttrainingsleistung
+Ausgangssituation
+Ich gehe regelmäßig joggen und möchte meine Trainingseinheiten besser im Blick behalten. Bisher schätze ich meine Leistungen nur ungefähr ein. Deshalb wünsche ich mir ein kleines Programm, das mir nach jedem Training eine Übersicht über meine Laufleistung gibt.
+
+Dein Anliegen
+Ich möchte ein einfaches Programm, mit dem ich meine Laufstrecke und meine benötigte Zeit auswerten kann. Außerdem möchte ich wissen, wie schnell ich durchschnittlich unterwegs war und ob ich mein persönliches Trainingsziel erreicht habe.
+
+Gewünschte Funktionen
+Das Programm soll folgende Möglichkeiten bieten:
+
+Die gelaufene Strecke in Kilometern erfassen.
+
+Die benötigte Laufzeit in Minuten erfassen.
+
+Die durchschnittliche Geschwindigkeit in km/h berechnen und anzeigen.
+
+Die durchschnittliche Zeit pro Kilometer anzeigen.
+
+Ein persönliches Trainingsziel von beispielsweise 5 km überprüfen.
+
+Dem Benutzer mitteilen, ob er sein Trainingsziel erreicht hat.
+
+Eine kurze Bewertung der Trainingseinheit ausgeben:
+
+Unter 8 km/h: „Du kannst dich noch verbessern!“
+
+8 bis unter 11 km/h: „Gute Leistung!“
+
+Ab 11 km/h: „Hervorragende Leistung!“
+
+Bedienung
+Wenn ich das Programm starte, möchte ich folgende Angaben machen können:
+
+Wie viele Kilometer bin ich gelaufen?
+
+Wie viele Minuten habe ich dafür gebraucht?
+
+Welche Mindeststrecke hatte ich mir als Trainingsziel gesetzt?
+
+Anschließend soll mir das Programm alle Berechnungen übersichtlich anzeigen.
+
+Die eingegebenen Werte sollen sinnvoll sein. Eine Strecke oder Laufzeit von null oder ein negativer Wert soll nicht akzeptiert werden.
+
+Beispiel
+Ich starte das Programm und gebe folgende Werte ein:
+
+Gelaufene Strecke: 6 km
+
+Benötigte Zeit: 30 Minuten
+
+Persönliches Trainingsziel: 5 km
+
+Das Programm zeigt mir anschließend:
+
+Durchschnittsgeschwindigkeit: 12 km/h
+
+Durchschnittliche Zeit pro Kilometer: 5 Minuten
+
+Trainingsziel: Erreicht!
+
+Bewertung: Hervorragende Leistung!
+
+Besondere Wünsche
+Die Ergebnisse sollen übersichtlich und verständlich dargestellt werden.
+
+Nach der Auswertung soll das Programm freundlich verabschieden.
+
+Ich möchte das Programm ohne komplizierte Bedienung nutzen können.
+
+Die Berechnungen sollen auch mit Kommazahlen bei der Laufstrecke funktionieren.
+
+Ich freue mich auf eine einfache Lösung, mit der ich meine sportlichen Fortschritte besser einschätzen kann!
